@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A1587142165BFC700928820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587132165BFC700928820 /* AppDelegate.swift */; };
+		9A1587162165BFC700928820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587152165BFC700928820 /* ViewController.swift */; };
+		9A1587192165BFC700928820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1587172165BFC700928820 /* Main.storyboard */; };
+		9A15871B2165BFC900928820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A15871A2165BFC900928820 /* Assets.xcassets */; };
+		9A15871E2165BFC900928820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A15871C2165BFC900928820 /* LaunchScreen.storyboard */; };
+		9A1587292165BFCA00928820 /* OpenBCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587282165BFCA00928820 /* OpenBCITests.swift */; };
+		9A1587342165BFCA00928820 /* OpenBCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587332165BFCA00928820 /* OpenBCIUITests.swift */; };
+		9A1587392165BFCA00928820 /* OpenBCI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9A1587382165BFCA00928820 /* OpenBCI WatchKit App.app */; };
+		9A15873F2165BFCA00928820 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A15873D2165BFCA00928820 /* Interface.storyboard */; };
+		9A1587412165BFCA00928820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1587402165BFCA00928820 /* Assets.xcassets */; };
+		9A1587482165BFCB00928820 /* OpenBCI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A1587472165BFCB00928820 /* OpenBCI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A15874D2165BFCB00928820 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A15874C2165BFCB00928820 /* InterfaceController.swift */; };
+		9A15874F2165BFCB00928820 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A15874E2165BFCB00928820 /* ExtensionDelegate.swift */; };
+		9A1587512165BFCB00928820 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587502165BFCB00928820 /* NotificationController.swift */; };
+		9A1587532165BFCB00928820 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587522165BFCB00928820 /* ComplicationController.swift */; };
+		9A1587552165BFCB00928820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1587542165BFCB00928820 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A1587252165BFCA00928820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1587082165BFC700928820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A15870F2165BFC700928820;
+			remoteInfo = OpenBCI;
+		};
+		9A1587302165BFCA00928820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1587082165BFC700928820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A15870F2165BFC700928820;
+			remoteInfo = OpenBCI;
+		};
+		9A15873A2165BFCA00928820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1587082165BFC700928820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1587372165BFCA00928820;
+			remoteInfo = "OpenBCI WatchKit App";
+		};
+		9A1587492165BFCB00928820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1587082165BFC700928820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1587462165BFCB00928820;
+			remoteInfo = "OpenBCI WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A15875D2165BFCB00928820 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A1587482165BFCB00928820 /* OpenBCI WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587612165BFCB00928820 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9A1587392165BFCA00928820 /* OpenBCI WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A1587102165BFC700928820 /* OpenBCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1587132165BFC700928820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A1587152165BFC700928820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A1587182165BFC700928820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A15871A2165BFC900928820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A15871D2165BFC900928820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A15871F2165BFC900928820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1587242165BFCA00928820 /* OpenBCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1587282165BFCA00928820 /* OpenBCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBCITests.swift; sourceTree = "<group>"; };
+		9A15872A2165BFCA00928820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A15872F2165BFCA00928820 /* OpenBCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1587332165BFCA00928820 /* OpenBCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBCIUITests.swift; sourceTree = "<group>"; };
+		9A1587352165BFCA00928820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1587382165BFCA00928820 /* OpenBCI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenBCI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A15873E2165BFCA00928820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9A1587402165BFCA00928820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A1587422165BFCA00928820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1587472165BFCB00928820 /* OpenBCI WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OpenBCI WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A15874C2165BFCB00928820 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9A15874E2165BFCB00928820 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9A1587502165BFCB00928820 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9A1587522165BFCB00928820 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9A1587542165BFCB00928820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A1587562165BFCB00928820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1587572165BFCB00928820 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A15870D2165BFC700928820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587212165BFCA00928820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A15872C2165BFCA00928820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587442165BFCB00928820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A1587072165BFC700928820 = {
+			isa = PBXGroup;
+			children = (
+				9A1587122165BFC700928820 /* OpenBCI */,
+				9A1587272165BFCA00928820 /* OpenBCITests */,
+				9A1587322165BFCA00928820 /* OpenBCIUITests */,
+				9A15873C2165BFCA00928820 /* OpenBCI WatchKit App */,
+				9A15874B2165BFCB00928820 /* OpenBCI WatchKit Extension */,
+				9A1587112165BFC700928820 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A1587112165BFC700928820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A1587102165BFC700928820 /* OpenBCI.app */,
+				9A1587242165BFCA00928820 /* OpenBCITests.xctest */,
+				9A15872F2165BFCA00928820 /* OpenBCIUITests.xctest */,
+				9A1587382165BFCA00928820 /* OpenBCI WatchKit App.app */,
+				9A1587472165BFCB00928820 /* OpenBCI WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A1587122165BFC700928820 /* OpenBCI */ = {
+			isa = PBXGroup;
+			children = (
+				9A1587132165BFC700928820 /* AppDelegate.swift */,
+				9A1587152165BFC700928820 /* ViewController.swift */,
+				9A1587172165BFC700928820 /* Main.storyboard */,
+				9A15871A2165BFC900928820 /* Assets.xcassets */,
+				9A15871C2165BFC900928820 /* LaunchScreen.storyboard */,
+				9A15871F2165BFC900928820 /* Info.plist */,
+			);
+			path = OpenBCI;
+			sourceTree = "<group>";
+		};
+		9A1587272165BFCA00928820 /* OpenBCITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1587282165BFCA00928820 /* OpenBCITests.swift */,
+				9A15872A2165BFCA00928820 /* Info.plist */,
+			);
+			path = OpenBCITests;
+			sourceTree = "<group>";
+		};
+		9A1587322165BFCA00928820 /* OpenBCIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1587332165BFCA00928820 /* OpenBCIUITests.swift */,
+				9A1587352165BFCA00928820 /* Info.plist */,
+			);
+			path = OpenBCIUITests;
+			sourceTree = "<group>";
+		};
+		9A15873C2165BFCA00928820 /* OpenBCI WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9A15873D2165BFCA00928820 /* Interface.storyboard */,
+				9A1587402165BFCA00928820 /* Assets.xcassets */,
+				9A1587422165BFCA00928820 /* Info.plist */,
+			);
+			path = "OpenBCI WatchKit App";
+			sourceTree = "<group>";
+		};
+		9A15874B2165BFCB00928820 /* OpenBCI WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A15874C2165BFCB00928820 /* InterfaceController.swift */,
+				9A15874E2165BFCB00928820 /* ExtensionDelegate.swift */,
+				9A1587502165BFCB00928820 /* NotificationController.swift */,
+				9A1587522165BFCB00928820 /* ComplicationController.swift */,
+				9A1587542165BFCB00928820 /* Assets.xcassets */,
+				9A1587562165BFCB00928820 /* Info.plist */,
+				9A1587572165BFCB00928820 /* PushNotificationPayload.apns */,
+			);
+			path = "OpenBCI WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A15870F2165BFC700928820 /* OpenBCI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1587622165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI" */;
+			buildPhases = (
+				9A15870C2165BFC700928820 /* Sources */,
+				9A15870D2165BFC700928820 /* Frameworks */,
+				9A15870E2165BFC700928820 /* Resources */,
+				9A1587612165BFCB00928820 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A15873B2165BFCA00928820 /* PBXTargetDependency */,
+			);
+			name = OpenBCI;
+			productName = OpenBCI;
+			productReference = 9A1587102165BFC700928820 /* OpenBCI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A1587232165BFCA00928820 /* OpenBCITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1587652165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCITests" */;
+			buildPhases = (
+				9A1587202165BFCA00928820 /* Sources */,
+				9A1587212165BFCA00928820 /* Frameworks */,
+				9A1587222165BFCA00928820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1587262165BFCA00928820 /* PBXTargetDependency */,
+			);
+			name = OpenBCITests;
+			productName = OpenBCITests;
+			productReference = 9A1587242165BFCA00928820 /* OpenBCITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A15872E2165BFCA00928820 /* OpenBCIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1587682165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCIUITests" */;
+			buildPhases = (
+				9A15872B2165BFCA00928820 /* Sources */,
+				9A15872C2165BFCA00928820 /* Frameworks */,
+				9A15872D2165BFCA00928820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1587312165BFCA00928820 /* PBXTargetDependency */,
+			);
+			name = OpenBCIUITests;
+			productName = OpenBCIUITests;
+			productReference = 9A15872F2165BFCA00928820 /* OpenBCIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9A1587372165BFCA00928820 /* OpenBCI WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A15875E2165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI WatchKit App" */;
+			buildPhases = (
+				9A1587362165BFCA00928820 /* Resources */,
+				9A15875D2165BFCB00928820 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A15874A2165BFCB00928820 /* PBXTargetDependency */,
+			);
+			name = "OpenBCI WatchKit App";
+			productName = "OpenBCI WatchKit App";
+			productReference = 9A1587382165BFCA00928820 /* OpenBCI WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9A1587462165BFCB00928820 /* OpenBCI WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A15875A2165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI WatchKit Extension" */;
+			buildPhases = (
+				9A1587432165BFCB00928820 /* Sources */,
+				9A1587442165BFCB00928820 /* Frameworks */,
+				9A1587452165BFCB00928820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenBCI WatchKit Extension";
+			productName = "OpenBCI WatchKit Extension";
+			productReference = 9A1587472165BFCB00928820 /* OpenBCI WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A1587082165BFC700928820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = cindt;
+				TargetAttributes = {
+					9A15870F2165BFC700928820 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9A1587232165BFCA00928820 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9A15870F2165BFC700928820;
+					};
+					9A15872E2165BFCA00928820 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9A15870F2165BFC700928820;
+					};
+					9A1587372165BFCA00928820 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9A1587462165BFCB00928820 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 9A15870B2165BFC700928820 /* Build configuration list for PBXProject "OpenBCI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A1587072165BFC700928820;
+			productRefGroup = 9A1587112165BFC700928820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A15870F2165BFC700928820 /* OpenBCI */,
+				9A1587232165BFCA00928820 /* OpenBCITests */,
+				9A15872E2165BFCA00928820 /* OpenBCIUITests */,
+				9A1587372165BFCA00928820 /* OpenBCI WatchKit App */,
+				9A1587462165BFCB00928820 /* OpenBCI WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A15870E2165BFC700928820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A15871E2165BFC900928820 /* LaunchScreen.storyboard in Resources */,
+				9A15871B2165BFC900928820 /* Assets.xcassets in Resources */,
+				9A1587192165BFC700928820 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587222165BFCA00928820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A15872D2165BFCA00928820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587362165BFCA00928820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587412165BFCA00928820 /* Assets.xcassets in Resources */,
+				9A15873F2165BFCA00928820 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587452165BFCB00928820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587552165BFCB00928820 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A15870C2165BFC700928820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587162165BFC700928820 /* ViewController.swift in Sources */,
+				9A1587142165BFC700928820 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587202165BFCA00928820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587292165BFCA00928820 /* OpenBCITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A15872B2165BFCA00928820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587342165BFCA00928820 /* OpenBCIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1587432165BFCB00928820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1587512165BFCB00928820 /* NotificationController.swift in Sources */,
+				9A1587532165BFCB00928820 /* ComplicationController.swift in Sources */,
+				9A15874F2165BFCB00928820 /* ExtensionDelegate.swift in Sources */,
+				9A15874D2165BFCB00928820 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A1587262165BFCA00928820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A15870F2165BFC700928820 /* OpenBCI */;
+			targetProxy = 9A1587252165BFCA00928820 /* PBXContainerItemProxy */;
+		};
+		9A1587312165BFCA00928820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A15870F2165BFC700928820 /* OpenBCI */;
+			targetProxy = 9A1587302165BFCA00928820 /* PBXContainerItemProxy */;
+		};
+		9A15873B2165BFCA00928820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1587372165BFCA00928820 /* OpenBCI WatchKit App */;
+			targetProxy = 9A15873A2165BFCA00928820 /* PBXContainerItemProxy */;
+		};
+		9A15874A2165BFCB00928820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1587462165BFCB00928820 /* OpenBCI WatchKit Extension */;
+			targetProxy = 9A1587492165BFCB00928820 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A1587172165BFC700928820 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A1587182165BFC700928820 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A15871C2165BFC900928820 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A15871D2165BFC900928820 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9A15873D2165BFCA00928820 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A15873E2165BFCA00928820 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A1587582165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A1587592165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A15875B2165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = "OpenBCI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		9A15875C2165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = "OpenBCI WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		9A15875F2165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				IBSC_MODULE = OpenBCI_WatchKit_Extension;
+				INFOPLIST_FILE = "OpenBCI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		9A1587602165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				IBSC_MODULE = OpenBCI_WatchKit_Extension;
+				INFOPLIST_FILE = "OpenBCI WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		9A1587632165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A1587642165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A1587662165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenBCI.app/OpenBCI";
+			};
+			name = Debug;
+		};
+		9A1587672165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenBCI.app/OpenBCI";
+			};
+			name = Release;
+		};
+		9A1587692165BFCB00928820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenBCI;
+			};
+			name = Debug;
+		};
+		9A15876A2165BFCB00928820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E85U5F7L9;
+				INFOPLIST_FILE = OpenBCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cindt.OpenBCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenBCI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A15870B2165BFC700928820 /* Build configuration list for PBXProject "OpenBCI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1587582165BFCB00928820 /* Debug */,
+				9A1587592165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A15875A2165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A15875B2165BFCB00928820 /* Debug */,
+				9A15875C2165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A15875E2165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A15875F2165BFCB00928820 /* Debug */,
+				9A1587602165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1587622165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1587632165BFCB00928820 /* Debug */,
+				9A1587642165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1587652165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1587662165BFCB00928820 /* Debug */,
+				9A1587672165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1587682165BFCB00928820 /* Build configuration list for PBXNativeTarget "OpenBCIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1587692165BFCB00928820 /* Debug */,
+				9A15876A2165BFCB00928820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A1587082165BFC700928820 /* Project object */;
+}
