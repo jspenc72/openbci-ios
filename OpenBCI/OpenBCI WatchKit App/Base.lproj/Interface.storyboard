@@ -11,7 +11,15 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OpenBCI_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="OpenBCI_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Not Connected" id="nPI-Hf-aOW"/>
+                        <timer alignment="left" id="lah-ru-rSf"/>
+                    </items>
+                    <connections>
+                        <outlet property="connectivityLabel" destination="nPI-Hf-aOW" id="QmT-SQ-OOc"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="171" y="327"/>
         </scene>
