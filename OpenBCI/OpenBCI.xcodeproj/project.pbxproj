@@ -18,11 +18,11 @@
 		9A15873F2165BFCA00928820 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A15873D2165BFCA00928820 /* Interface.storyboard */; };
 		9A1587412165BFCA00928820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1587402165BFCA00928820 /* Assets.xcassets */; };
 		9A1587482165BFCB00928820 /* OpenBCI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A1587472165BFCB00928820 /* OpenBCI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9A15874D2165BFCB00928820 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A15874C2165BFCB00928820 /* InterfaceController.swift */; };
 		9A15874F2165BFCB00928820 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A15874E2165BFCB00928820 /* ExtensionDelegate.swift */; };
 		9A1587512165BFCB00928820 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587502165BFCB00928820 /* NotificationController.swift */; };
 		9A1587532165BFCB00928820 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1587522165BFCB00928820 /* ComplicationController.swift */; };
 		9A1587552165BFCB00928820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1587542165BFCB00928820 /* Assets.xcassets */; };
+		9A2B3F5021670CE00003E450 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A15874C2165BFCB00928820 /* InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -438,9 +438,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1587512165BFCB00928820 /* NotificationController.swift in Sources */,
+				9A2B3F5021670CE00003E450 /* InterfaceController.swift in Sources */,
 				9A1587532165BFCB00928820 /* ComplicationController.swift in Sources */,
 				9A15874F2165BFCB00928820 /* ExtensionDelegate.swift in Sources */,
-				9A15874D2165BFCB00928820 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -603,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

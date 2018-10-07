@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 import CoreBluetooth
 
-class InterfaceController: WKInterfraceController {
+class InterfaceController: WKInterfaceController {
     var centralManager: CBCentralManager!
     var openBCIBoard: CBPeripheral?
     var serviceUUID = CBUUID(string: "780A")            //Need to obtain correct values for uuid
